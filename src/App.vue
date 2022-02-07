@@ -26,11 +26,11 @@ export default {
         }
     },
     mounted() {
-      console.log(this.ohlcv); 
-      axios.get('http://127.0.0.1:8000/crypto/btc').then(response => (this.ohlcv = response.data));
+      console.log(this.ohlcv);
+      axios.get('http://127.0.0.1:8000/forex/btceth').then(response => (this.ohlcv = response.data));
+      // axios.get('http://127.0.0.1:8000/crypto/btc').then(response => (this.ohlcv = response.data));
       // axios.get('http://127.0.0.1:8000/crypto/btc').then(function(response) {
-        // console.log(typeof response); 
-        // console.log(response);  
+      //   console.log(response);
       // });
     }
 }
